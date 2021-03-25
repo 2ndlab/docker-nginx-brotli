@@ -2,7 +2,7 @@ ARG NGINX_VERSION=1.19.8
 
 ARG NGX_BROTLI_COMMIT=9aec15e2aa6feea2113119ba06460af70ab3ea62
 
-FROM FROM ghcr.io/2ndlab/nginx-builder:main AS Builder
+FROM ghcr.io/2ndlab/nginx-builder:main AS Builder
 
 RUN \
         apk add --no-cache --virtual .brotli-deps \
